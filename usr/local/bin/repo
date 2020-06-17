@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+echo '
+[darkos_repo]
+SigLevel = Required DatabaseOptional
+Include = /etc/pacman.d/darkos-mirrorlist
+' | sudo tee --append /etc/pacman.conf
+sudo pacman -Syy
